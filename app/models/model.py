@@ -20,4 +20,4 @@ is_deleted = fields.IntField(default=0)
 
 
 class Meta:
-        table = 'users'
+    table = 'users'
