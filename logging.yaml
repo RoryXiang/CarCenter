@@ -1,0 +1,22 @@
+version: 1
+
+disable_existing_loggers: False
+
+formatters:
+  simple:
+    format: '%(asctime)s - %(filename)s - [line:%(lineno)d] - %(levelname)s: %(message)s'
+    datefmt: '%F %T'
+
+handlers:
+  root_handler:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+
+loggers:
+  apscheduler:
+    level: ERROR
+
+root:
+  level: INFO
+  handlers: [root_handler]

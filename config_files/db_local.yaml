@@ -1,0 +1,20 @@
+MYSQLHOST: "127.0.0.1"
+MYSQLPORT: 3306
+MYSQLDATABASE: "car-center"
+MYSQLUSER: "root"
+MYSQLPASSWORD: "root1234"
+#
+
+
+#OLD_MONGO_URL:  "mongodb://127.0.0.1:27017/"
+#OLD_MONGO_DB: "spider"
+#
+#REDISHOST: "redis://:moka@1234@redis.staging-11.svc.k8s.staging.mokahr.com:6379/6"
+REDISHOST: "127.0.0.1"
+REDISPORT: 6379
+REDISPASSWORD: "xsp123456"
+REDISDB: 1
+
+
+# ===========kafka==========
+KAFKA_SERVERS: "kafka.staging-7.svc.k8s.staging.mokahr.com:9092"

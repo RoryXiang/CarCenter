@@ -1,0 +1,17 @@
+from starlette.middleware.cors import CORSMiddleware
+from app.middlewares.trace_id import LogTraceMiddleware
+
+origins = [
+    "*"
+]   # TODO regex
+
+
+def middleware_init(app):
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+    app.add_middleware(LogTraceMiddleware)
