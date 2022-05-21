@@ -7,6 +7,8 @@ from pydantic import BaseSettings
 
 env = os.getenv("PYTHON_ENV", "local")
 
+env = 'local'  # TODO 上线删除
+
 
 class APISettings(BaseSettings):
     # 开发模式配置
